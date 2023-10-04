@@ -1,0 +1,1062 @@
+@font-face {
+    font-family: fcb-bold;
+    src: url('/font/FC_BARCELONA-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: fcb-extra-bold;
+    src: url('/font/FC_BARCELONA-Extrabold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: fcb-light;
+    src: url('/font/FC_BARCELONA-Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: fcb-semi-bold;
+    src: url('/font/FC_BARCELONA-Semibold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: fcb-regular;
+    src: url('/font/FC_BARCELONA-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    font-family: fcb-regular;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: rgb(21,66,132);
+    background: linear-gradient(161deg, rgba(21,66,132,1) 1%, rgba(205,18,45,1) 52%, rgba(21,66,132,1) 100%);
+}
+
+.navbar{
+    width: 100%;
+    height: 12rem;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24,23,51);
+    border-bottom: 0.8rem solid transparent;
+    border-image-source: linear-gradient(90deg,#154284 0,#cd122d);
+    border-image-slice: 1;
+    z-index: 100;
+}
+
+.logo{
+    width: 22.5%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.1rem solid rgb(82, 81, 81);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.logo::after{
+    content: "";
+    width: 2rem;
+    height: 3rem;
+    position: absolute;
+    top: -5rem;
+    right: 0;
+    background-color: #cd122d;
+    transition: top 0.3s;
+}
+
+.logo::before{
+    content: "";
+    width: 2rem;
+    height: 3rem;
+    position: absolute;
+    bottom: -5rem;
+    left: 0;
+    background-color: #154284;
+    transition: bottom 0.3s;
+}
+
+.logo:hover{
+    background-color: rgb(36, 35, 62);
+    transition: backgorund-color 1s;
+}
+
+.logo:hover::after{
+    top: 0;
+    transition: top 0.3s;
+}
+
+.logo:hover::before{
+    bottom: 0;
+    visibility: visible;
+    transition: bottom 0.3s;
+}
+
+.logo-img{
+    width: 10rem;
+    opacity: 0.9;
+}
+
+.logo-title{
+    width: auto;
+    font-family: fcb-bold;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.navbar-menu{
+    width: 78%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-contact{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a0927;
+}
+
+.sosmed{
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(183, 180, 180);
+}
+
+.follow{
+    font-family: fcb-bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.sosmed a{
+    font-size: 1.8rem;
+    color: rgb(146, 143, 143);
+}
+
+.sosmed a:hover{
+    color: #fff;
+}
+
+.navbar-access{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+}
+
+.login{
+    width: 10rem;
+}
+
+.login-link{
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: fcb-extra-bold;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.login-link:hover{
+    text-decoration: underline solid #fff;
+}
+
+.register{
+    width: 15rem;
+    height: 3.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: fcb-extra-bold;
+    font-size: 1.3rem;
+    color: #fff;
+    background: linear-gradient(90deg,#8c1a17,#cd122d);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.icon{
+    margin-right: 0.5rem;
+    width: 1.8rem;
+    fill: #fff;
+}
+
+.navbar-link{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: fcb-extra-bold;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+.link{
+    width: 25%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.1rem solid rgb(82, 81, 81);  
+    cursor: pointer;  
+    transition: color 0.5s;
+}
+
+.link a{
+    color: inherit;
+}
+
+.link:first-child:hover ~ li{
+    color: rgb(147, 147, 147);
+    transition: color 0.5s;
+}
+
+.link:nth-child(2):hover ~ li{
+    color: rgb(147, 147, 147);
+    transition: color 0.5s;
+}
+
+.link:nth-child(3):hover ~ li{
+    color: rgb(147, 147, 147);
+    transition: color 0.5s;
+}
+
+.link:nth-child(4):hover ~ li{
+    color: rgb(147, 147, 147);
+    transition: color 0.5s;
+}    
+.grup{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: #154284;
+    transform: scale(0);
+    transform-origin: top center;
+}    
+
+.grup::before{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    display: inline-block;
+    bottom: 100%;
+    border: 0.8rem solid #154284;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.tentang-kami{
+    padding: 2rem;
+    width: 18rem;
+    height: 18rem;
+    position: absolute;
+    bottom: -17rem;
+}
+
+.publikasi{
+    padding-top: 1.5rem;
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    bottom: -14rem;
+}
+
+.grup-link{
+    font-family: fcb-bold;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    transform: translateY(-2rem);
+}    
+
+.grup-link a{
+    font-family: inherit;
+    color: inherit;
+}
+
+.grup-link:hover{
+    text-decoration: underline solid #fff;
+}
+
+.publikasi .grup-link{
+    width: 10rem;
+    height: 3rem;
+}
+
+.link:hover .grup{
+    transform: scale(1);
+    transition: transform 0.19s ease-in;
+}
+
+.link:hover .grup-link{
+    transform: translateY(0);
+    transition: transform 0.7s;
+}
+
+/* END OF NAVBAR STYLE */
+
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* SECTION 0 */
+.section-0{
+    padding: 20% 10% 0;
+    width: 100%;
+    height: 79vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    background-color: #fff;
+}
+
+.section-0 .welcome{
+    width: 70%;
+    color: #034078;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome p{
+    width: 70%;
+    font-family: fcb-semi-bold;
+    font-size: 1.5rem;
+}
+.welcome h1{
+    font-family: fcb-bold;
+    font-size: 7rem;
+    text-shadow: 2px 3px 10px #66666b;
+}
+
+.welcome-img{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.welcome-img img{
+    position: relative;
+    top: 1rem;
+    width: 180%;
+}
+
+.section-0::after{
+    content: url(assests/vector2.png);
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: -83rem;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+/* SECTION EVENTS */
+.section-1{
+    margin: 20rem 0 0;
+    padding: 3rem 4rem 0;
+    width: 97.5%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3rem;
+    z-index: 2;
+}
+
+.events-h1{
+    font-family: fcb-bold;
+    font-size: 6rem;
+    color: #fff;
+}
+
+.section-1::after{
+    content: "";
+    position: relative;
+    top: -54rem;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    display: inline-block;
+    border-radius: 1rem;
+    background-color: #fff;
+}
+
+.section-1-img{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 4rem;
+    border: 1rem solid #fff;
+}
+
+.image{
+    padding-bottom: 2rem;
+    width: calc(100%/3);
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: #fff;
+    text-align: center;
+    transform: scale(1);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.image::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(360deg, rgb(0, 0, 0) 20%, transparent);
+}
+
+.sertijab{
+    background-image: url(assests/sertijab.JPG);
+    background-size: cover;
+    transform-origin: center;
+}
+
+.p2md{
+    background-image: url(assests/p2md.JPG);
+    background-size: cover;
+    transform-origin: right;
+}
+
+.berbagi{
+    background-image: url(assests/berbagi.jpg);
+    background-size: cover;
+    transform-origin: right;
+}
+
+/* transition background */
+
+.sertijab:hover{
+    width: 50%;
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+.p2md:hover{
+    width: 51%;
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+.berbagi:hover{
+    width: 50%;
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+/* End transition background */
+
+.text{
+    z-index: 2;
+}
+
+.heading-img{
+    font-family: fcb-extra-bold;
+    font-size: 1.8rem;
+    transition: all 0.2s;
+}
+
+.image:hover .heading-img{
+    transform: translateY(-10rem);
+    transition: all 0.2s;
+}
+
+.desc-img{
+    padding: 0 5rem;
+    width: 100%;
+    position: absolute;
+    bottom: -1rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    visibility: hidden;
+}
+
+.image:hover .desc-img{
+    bottom: 10rem;
+    visibility: visible;
+    transition: all 0.2s 0.07s;
+}
+
+.metadata-img{
+    padding: 0 30%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.image:hover .metadata-img{
+    transform: translateY(-5rem);
+    transition: all 0.3s;
+}
+
+.read-more{
+    position: relative;
+    font-family: fcb-bold;
+    font-size: 1.2rem;
+    color: #fdc52c;
+}
+
+.time{
+    width: 6.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+/* END OF SECTION 1/EVENTS */
+
+/* SECTION 2/ARTICLE */
+
+.section-2{
+    width: 92%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    border-radius: 4rem 4rem 0 0;
+    background-color: #ffffff;
+}
+
+.section-2::after{
+    content: "";
+    position: relative;
+    top: -56rem;
+    left: 5.2rem;
+    width: 92%;
+    height: 0.5rem;
+    display: inline-block;
+    border-radius: 1rem;
+    background-image: linear-gradient(90deg, #cd122d 0,#154284);
+}
+
+.article-h1{
+    margin-left: 5.2rem;
+    font-family: fcb-bold;
+    font-size: 6rem;
+    color: #cd122d;
+}
+
+.article-container{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.article-box{
+    width: 25%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 7px #000000;
+    overflow: hidden;
+    transition: all ease 0.2s;
+}
+
+.article-box:hover{
+    box-shadow: 0 0 15px #000000;
+}
+
+.article-img{
+    width: 100%;
+    height: 45%;
+}
+
+.article-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.article-text{
+    padding: 0 2rem;
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.judul-artikel{
+    font-family: fcb-bold;
+    font-size: 2rem;
+}
+
+.desc-article{
+    font-family: fcb-semi-bold;
+    font-size: 1.2rem;
+}
+
+.article-feature{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #7c7a7a;
+}
+
+.read-now{
+    font-family: fcb-semi-bold;
+    font-size: 1.2rem;
+    color: #768e15;
+    cursor: pointer;
+}
+
+.date{
+    font-family: fcb-semi-bold;
+    font-size: 1.2rem;
+    color: #0a0927;
+}
+
+/* SECTION 3 */
+.section-3{
+    margin-top: 3rem;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.himsi-footer{
+    width: 97.5%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-footer{
+    padding-left: 4rem;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-img-footer{
+    width: 14rem;
+}
+
+.text-footer{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.text-footer h1{
+    font-family: fcb-bold;
+    font-size: 6em;
+}
+
+.text-footer p{
+    position: relative;
+    top: -1.7rem;
+    font-family: fcb-semi-bold;
+    font-size: 1.35em;
+}
+
+.sosmed-footer{
+    padding-top: 0.6rem;
+    width: 40%;
+}
+
+.sosmed-footer p{
+    padding-left: 1rem;
+    font-family: fcb-semi-bold;
+    font-size: 1.5rem;
+    color: #ffffff;    
+}
+
+.sosmed-footer .sosmed{
+    width: 50%;
+}
+
+.sosmed-footer .sosmed li a{
+    font-size: 3.5rem;
+}
+
+.copyright{
+    padding-left: 8rem;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-content: end;
+    align-items: center;
+    font-family: fcb-semi-bold;
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-align: left;
+    background-color: #0a0927;
+}
+
+/* CSS for desktop view */
+.navbar {
+    height: 12rem;
+  }
+  
+  .logo {
+    width: 22.5%;
+  }
+  
+  .logo-title {
+    font-size: 3rem;
+  }
+  
+  .navbar-menu {
+    width: 78%;
+  }
+  
+  .navbar-contact {
+    height: 40%;
+  }
+  
+  .sosmed {
+    width: 35%;
+  }
+  
+  .navbar-access {
+    width: 45%;
+  }
+  
+  .login-link {
+    font-size: 1.5rem;
+  }
+  
+  .register {
+    width: 15rem;
+    height: 3.6rem;
+  }
+  
+  .navbar-link {
+    font-size: 1.5rem;
+  }
+  
+  .link {
+    width: 25%;
+  }
+  
+  .grup {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: #154284;
+    transform: scale(0);
+    transform-origin: top center;
+  }
+  
+  .grup::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    display: inline-block;
+    bottom: 100%;
+    border: 0.8rem solid #154284;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+  
+  .tentang-kami {
+    padding: 2rem;
+    width: 18rem;
+    height: 18rem;
+    position: absolute;
+    bottom: -17rem;
+  }
+  
+  .publikasi {
+    padding-top: 1.5rem;
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    bottom: -14rem;
+  }
+  
+  .grup-link {
+    font-family: fcb-bold;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    transform: translateY(-2rem);
+  }
+  
+  /* CSS for mobile view */
+  @media only screen and (max-width: 768px) {
+    .navbar {
+      height: 8rem;
+    }
+  
+    .logo {
+      width: 30%;
+    }
+  
+    .logo-title {
+      font-size: 2.5rem;
+    }
+  
+    .navbar-menu {
+      width: 70%;
+    }
+  
+    .navbar-contact {
+      height: 30%;
+    }
+  
+    .sosmed {
+      width: 50%;
+    }
+  
+    .navbar-access {
+      width: 55%;
+    }
+  
+    .login-link {
+      font-size: 1.2rem;
+    }
+  
+    .register {
+      width: 12rem;
+      height: 3rem;
+      font-size: 1rem;
+    }
+  
+    .navbar-link {
+      font-size: 1.2rem;
+    }
+  
+    .link {
+      width: 20%;
+    }
+  
+    .grup {
+      width: 100%;
+      height: auto;
+      transform: scale(1);
+      transform-origin: top left;
+    }
+  
+    .tentang-kami,
+    .publikasi {
+      width: 100%;
+      position: relative;
+      bottom: 0;
+      transform: none;
+    }
+  
+    .grup-link {
+      transform: translateY(0);
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
