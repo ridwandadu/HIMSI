@@ -1,34 +1,34 @@
 @font-face {
     font-family: fcb-bold;
-    src: url('/font/FC_BARCELONA-Bold.woff2') format('woff2');
+    src: url('font/FC_BARCELONA-Bold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: fcb-extra-bold;
-    src: url('/font/FC_BARCELONA-Extrabold.woff2') format('woff2');
+    src: url('font/FC_BARCELONA-Extrabold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: fcb-light;
-    src: url('/font/FC_BARCELONA-Light.woff2') format('woff2');
+    src: url('font/FC_BARCELONA-Light.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: fcb-semi-bold;
-    src: url('/font/FC_BARCELONA-Semibold.woff2') format('woff2');
+    src: url('font/FC_BARCELONA-Semibold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: fcb-regular;
-    src: url('/font/FC_BARCELONA-Regular.woff2') format('woff2');
+    src: url('font/FC_BARCELONA-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -484,7 +484,7 @@ body{
 }
 
 .sertijab{
-    background-image: url(assests/sertijab.JPG);
+    background-image: url(/assests/sertijab.JPG);
     background-size: cover;
     transform-origin: center;
 }
