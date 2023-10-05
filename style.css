@@ -484,13 +484,13 @@ body{
 }
 
 .sertijab{
-    background-image: url(assests/sertijab.JPG);
+    background-image: url(assests/sertijab.jpg);
     background-size: cover;
     transform-origin: center;
 }
 
 .p2md{
-    background-image: url(assests/p2md.JPG);
+    background-image: url(assests/p2md.jpg);
     background-size: cover;
     transform-origin: right;
 }
