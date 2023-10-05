@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: fcb-bold;
     src: url('font/FC_BARCELONA-Bold.woff2') format('woff2');
@@ -484,7 +485,7 @@ body{
 }
 
 .sertijab{
-    background-image: url(/assests/sertijab.JPG);
+    background-image: url(assests/sertijab.JPG);
     background-size: cover;
     transform-origin: center;
 }
